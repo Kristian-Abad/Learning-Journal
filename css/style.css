@@ -8,6 +8,8 @@ body {
     background-image: url("/images/hero_test.jpg");
     width: minmax(414px,100%);
     height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
     padding: 5rem 1.25rem 1.625rem 1.25rem;
     gap: 0.5rem;
     display: flex;

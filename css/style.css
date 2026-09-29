@@ -33,22 +33,28 @@ body {
     margin-top: 3px;
 }
 
-.post-images{
+/* .post-images{
     max-width: 414px;
     
+} */
+
+.main {
+    margin: 34px 1.25rem 0 1.25rem;
+
 }
 
 .article-container {
     display: flex;
     flex-direction: column;
-    max-width: 414px;
-    margin: 34px 1.25rem 0 1.25rem;
+    width: 100%;
+    height: auto;
     box-sizing: border-box;
 }
 
 .post-images {
     margin-bottom: 0.875rem;
     border-radius: 5px;
+    height: auto;
 }
 
 .post-date-text {
@@ -117,7 +123,32 @@ body {
 
 }
 
+@media (min-width: 1085px) {
+    
+    .first-post {
+        grid-area: first-post;
+    }
+    
+    .second-post {
+        grid-area: second-post;
+    }
 
+    .third-post {
+        grid-area: third-post;
+    }
+
+    .main {
+        display: grid;
+        grid-template-areas:
+            "first-post second-post third-post";
+        height: auto;
+    }
+
+    .post-images {
+        max-width: 385px;
+
+    }
+}
 
 /* Styles */
 .nav-links,

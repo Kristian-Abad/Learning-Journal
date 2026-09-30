@@ -33,16 +33,6 @@ body {
     margin-top: 3px;
 }
 
-/* .post-images{
-    max-width: 414px;
-    
-} */
-
-.main {
-    margin: 34px 1.25rem 0 1.25rem;
-
-}
-
 .article-container {
     display: flex;
     flex-direction: column;
@@ -54,6 +44,7 @@ body {
 .post-images {
     margin-bottom: 0.875rem;
     border-radius: 5px;
+    width: 100%;
     height: auto;
 }
 
@@ -124,6 +115,8 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        margin: 34px 1.25rem 0 1.25rem;
+        
     }
 
     .expand-anchor{
@@ -147,23 +140,45 @@ body {
         grid-area: third-post;
     }
 
+    .fourth-post {
+        grid-area: fourth-post;
+    }
+
+    .fifth-post {
+        grid-area: fifth-post;
+    }
+
+    .sixth-post {
+        grid-area: sixth-post;
+    }
+
     .main {
         display: grid;
         grid-template-areas:
             "first-post second-post third-post"
+            "fourth-post fifth-post sixth-post"
             "... expand ...";
+        column-gap: 1.625rem;
+        row-gap: 2.875rem;
         height: auto;
     }
 
+    
+    .post-images {
+        width: 100%;
+        height: auto;
+        max-height: 232px;
+        object-fit: cover;
+    }
+    
+    .post-title-text {
+        font-size: 1.5rem;
+    }
+    
     .expand-anchor{
         grid-area: expand;
         font-size: 14px;
         margin-bottom: 3rem;
-    }
-
-    .post-images {
-        max-width: 385px;
-
     }
 }
 
@@ -177,6 +192,13 @@ body {
 .hero-div,
 .expand-anchor{
     font-family: "Source Sans 3", sans-serif;
+}
+
+.title-text,
+.footer-title-text,
+.post-title-text,
+.expand-anchor {
+    font-weight: bold;
 }
 
 .nav-links{
@@ -205,7 +227,7 @@ ul {
 
 .title-text {
     font-size: 2rem;
-    font-weight: bold;
+    
 }
 
 .footer-container{
@@ -214,17 +236,14 @@ ul {
     
 }
 
-.footer-title-text{
-    font-weight: bold;
-}
-
 .footer-title-text,
 .footer-copyright-text{
     font-size: 12pt;
 }
 
 .expand-anchor{
-    font-weight: bold;
+    
     font-size: 1rem;
     text-align: center;
+    text-decoration: underline;
 }

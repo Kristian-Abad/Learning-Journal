@@ -77,6 +77,7 @@ body {
     height: auto;
 }
 
+/* Mobile */
 @media (min-width: 414px) {
     
     .nav-bar {
@@ -119,10 +120,19 @@ body {
         padding: 0;
     }
 
-    
+    .main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .expand-anchor{
+        font-size: 1rem;
+    }
 
 }
 
+/* Desktop */
 @media (min-width: 1085px) {
     
     .first-post {
@@ -140,8 +150,15 @@ body {
     .main {
         display: grid;
         grid-template-areas:
-            "first-post second-post third-post";
+            "first-post second-post third-post"
+            "... expand ...";
         height: auto;
+    }
+
+    .expand-anchor{
+        grid-area: expand;
+        font-size: 14px;
+        margin-bottom: 3rem;
     }
 
     .post-images {
@@ -157,7 +174,8 @@ body {
 .post-date-text,
 .post-title-text,
 .post-preview-text,
-.hero-div{
+.hero-div,
+.expand-anchor{
     font-family: "Source Sans 3", sans-serif;
 }
 
@@ -203,4 +221,10 @@ ul {
 .footer-title-text,
 .footer-copyright-text{
     font-size: 12pt;
+}
+
+.expand-anchor{
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
 }

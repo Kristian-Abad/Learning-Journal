@@ -37,6 +37,8 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
     height: auto;
     box-sizing: border-box;
 }
@@ -160,6 +162,7 @@ body {
             "... expand ...";
         column-gap: 1.625rem;
         row-gap: 2.875rem;
+        margin: 3.3125rem 3.3125rem 0 3.3125rem;
         height: auto;
     }
 

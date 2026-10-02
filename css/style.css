@@ -5,7 +5,7 @@ body {
 }
 
 .hero-div{
-    background-image: url("/images/hero_test.jpg");
+    background-image: url("/images/hero_test_2.jpg");
     width: minmax(414px,100%);
     height: auto;
     background-repeat: no-repeat;
@@ -17,6 +17,11 @@ body {
 }
 
 /* Layout */
+
+.subtext {
+    max-width: 650;
+}
+
 .footer-container{
     display: flex;
     flex-direction: column;

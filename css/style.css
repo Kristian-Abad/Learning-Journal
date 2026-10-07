@@ -4,18 +4,23 @@ body {
     padding: 0;
 }
 
-
+.nav-bar,
+.hero-div,
+.main,
+.footer-container{
+    box-sizing: border-box;
+}
 
 .hero-div{
     background-image: url("/images/hero_test_2.jpg");
     min-width: 414px;
     max-width: 1085px;
     margin: 0 auto;
-    box-sizing: border-box;
     height: auto;
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5rem 1.25rem 1.625rem 1.25rem;
+    /* border: 1px solid orange; */
     gap: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -49,9 +54,19 @@ body {
     flex-direction: column;
     width: 100%;
     max-width: 600px;
-    margin: 0 auto;
     height: auto;
     box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 34px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 414px;
 }
 
 .post-images {
@@ -86,7 +101,6 @@ body {
     max-width: 1085px;
     margin: 0 auto;
     border: solid 1px red;
-    box-sizing: border-box;
 }
 
 .logo-div {
@@ -124,14 +138,6 @@ body {
 .subtext {
     margin: 0;
     padding: 0;
-}
-
-.main{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 34px auto 0 auto;
-    min-width: 414px;
 }
 
 .expand-anchor{
@@ -183,6 +189,7 @@ body {
     .post-images {
         width: 100%;
         height: 100%;
+        min-height: 258.53px;
         object-fit: cover;
     }
     

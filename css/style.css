@@ -20,7 +20,6 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5rem 1.25rem 1.625rem 1.25rem;
-    /* border: 1px solid orange; */
     gap: 0.5rem;
     display: flex;
     flex-direction: column;
@@ -100,7 +99,6 @@ body {
     background-color: white;
     max-width: 1085px;
     margin: 0 auto;
-    border: solid 1px red;
 }
 
 .logo-div {
@@ -113,8 +111,6 @@ body {
 .links-div{
     display: flex;
     flex-direction: row;
-    /* justify-content: flex-start; */
-    border: solid 1px black;
 }
 
 .links-div ul{
@@ -123,9 +119,7 @@ body {
     align-items: center;
     gap: 2em;
     padding: 0;
-    margin: 0;
-    border: solid 1px blue;
-    
+    margin: 0;    
 }
 
 .image-logo{

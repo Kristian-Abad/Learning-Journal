@@ -11,18 +11,28 @@ body {
     box-sizing: border-box;
 }
 
-.hero-div{
-    background-image: url("/images/hero_test_2.jpg");
+.hero-div,
+.blog {
     min-width: 414px;
     max-width: 1085px;
     margin: 0 auto;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.hero-div{
+    background-image: url("/images/hero_test_2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     padding: 5rem 1.25rem 1.625rem 1.25rem;
     gap: 0.5rem;
-    display: flex;
-    flex-direction: column;
+
+}
+
+.clickable-div {
+    text-decoration: none;
 }
 
 /* Layout */
@@ -106,11 +116,13 @@ body {
     flex-direction: row;
     align-items: center;
     gap: 0.2em;
+    margin-left: 20px;
 }
 
 .links-div{
     display: flex;
     flex-direction: row;
+    margin-right: 20px;
 }
 
 .links-div ul{

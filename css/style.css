@@ -7,7 +7,8 @@ body {
 .nav-bar,
 .hero-div,
 .main,
-.footer-container{
+.footer-container,
+.blog{
     box-sizing: border-box;
 }
 
@@ -20,6 +21,12 @@ body {
     display: flex;
     flex-direction: column;
     
+}
+
+.blog-image {
+    min-width: 414px;
+    max-width: 1085px;
+    height: 100%;
 }
 
 .hero-div{
@@ -217,7 +224,8 @@ body {
 .post-date-text,
 .post-title-text,
 .post-preview-text,
-.expand-anchor{
+.expand-anchor,
+.blog{
     font-family: "Source Sans 3", sans-serif;
 }
 

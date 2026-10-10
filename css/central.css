@@ -1,0 +1,146 @@
+/* Layout */
+
+html, 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav-bar,
+.hero-div,
+.main,
+.footer-container,
+.blog{
+    box-sizing: border-box;
+}
+
+.hero-div,
+.blog {
+    min-width: 414px;
+    max-width: 1085px;
+    margin: 0 auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.nav-bar{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    min-width: 414px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    max-width: 1085px;
+    margin: 0 auto;
+}
+
+.logo-div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.2em;
+    margin-left: 20px;
+}
+
+.links-div{
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
+.links-div ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2em;
+    padding: 0;
+    margin: 0;    
+}
+
+.image-logo{
+    width: 35px;
+    height: 35px;
+}
+
+.date-text,
+.title-text,
+.subtext {
+    margin: 0;
+    padding: 0;
+}
+
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 414px;
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-title-text{
+    margin-bottom: 0;
+}
+
+.footer-copyright-text{
+    margin-top: 3px;
+}
+
+/* Styles */
+.nav-links,
+.hero-div,
+.footer-container,
+.post-date-text,
+.post-title-text,
+.post-preview-text,
+.expand-anchor,
+.blog{
+    font-family: "Source Sans 3", sans-serif;
+}
+
+.title-text,
+.footer-title-text,
+.post-title-text,
+.expand-anchor {
+    font-weight: bold;
+}
+
+.nav-links{
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.home-link{
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 14pt;
+}
+
+.date-text{
+    font-size: 0.75rem;
+}
+
+.title-text {
+    font-size: 2rem;
+    
+}
+
+.footer-container{
+    background-color: #202020;
+    color: white;
+    
+}
+
+.footer-title-text,
+.footer-copyright-text{
+    font-size: 12pt;
+}

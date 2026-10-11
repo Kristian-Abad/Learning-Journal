@@ -1,5 +1,4 @@
 /* Layout */
-
 html, 
 body {
     margin: 0;
@@ -14,15 +13,27 @@ body {
     box-sizing: border-box;
 }
 
-.hero-div,
-.blog {
+.main,
+.blog,
+.hero-div {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-div {
     min-width: 414px;
     max-width: 1085px;
     margin: 0 auto;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    
+}
+
+.main{
+    justify-content: center;
+    align-items: center;
+    margin-top: 34px;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-width: 414px;
 }
 
 .nav-bar{

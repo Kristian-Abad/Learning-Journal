@@ -1,4 +1,7 @@
 .blog-image {
-    min-width: 414px;
+    width: 100%;
+}
+
+.blog {
     max-width: 1085px;
 }

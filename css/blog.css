@@ -1,7 +1,59 @@
+/* Layout */
 .blog-image {
     width: 100%;
 }
 
 .blog {
     max-width: 1085px;
+    margin-bottom: 3.1875rem;
 }
+
+.main {
+    margin-top: 2rem;
+    margin-bottom: 3.5rem;
+}
+
+.date-text,
+.title-text {
+    margin-bottom: 1rem;
+}
+
+.title-text {
+    line-height: 108.2%;
+}
+
+.subtext,
+.blog-image {
+    margin-top: 0;
+    margin-bottom: 2.1875rem;
+}
+
+.recent-posts-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+}
+
+/* Desktop */
+@media (min-width: 1085px){
+
+    .recent-posts-subheader{
+        grid-area: recent-header;
+        text-align: center;
+    }
+    
+    .recent-posts-div {
+        display: grid;
+        grid-template-areas:
+            "... recent-header ..."
+            "first-post second-post third-post";
+        column-gap: 1.625rem;
+        row-gap: 2.875rem;
+        margin: 3.3125rem auto 0 auto;
+        height: auto;
+        max-width: 1085px;
+        box-sizing: border-box;
+    }
+}
+

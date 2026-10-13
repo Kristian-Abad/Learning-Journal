@@ -1,0 +1,29 @@
+
+/* Layout */
+
+.about-me {
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-image {
+    width: 50%;
+    border-radius: 100%;
+    max-width: 20%;
+}
+
+.about-me-text {
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 1085px){
+    .about-me {
+        flex-direction: row;
+        gap: 33px;
+    }
+
+    .about-me-text {
+        margin-top: 65px;
+    }
+}

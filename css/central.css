@@ -153,7 +153,7 @@ body {
     }
     
     .post-title-text {
-        font-size: 1.5rem;
+        font-size: clamp(1.5rem, 1.461rem + 0.149vw, 1.563rem);
     }
 }
 
@@ -174,7 +174,8 @@ body {
 .footer-title-text,
 .post-title-text,
 .expand-anchor,
-.recent-posts-subheader {
+.recent-posts-subheader,
+.subheader {
     font-weight: bold;
 }
 
@@ -182,6 +183,7 @@ body {
     font-weight: 500;
     text-decoration: none;
     color: black;
+    font-size: clamp(0.75rem, 0.596rem + 0.596vw, 1rem);
 }
 
 ul {
@@ -191,15 +193,15 @@ ul {
 .home-link{
     font-family: "Roboto", sans-serif;
     font-weight: 700;
-    font-size: 14pt;
+    font-size: clamp(0.813rem, 0.543rem + 1.043vw, 1.25rem);
 }
 
 .date-text{
-    font-size: 0.75rem;
+    font-size: clamp(0.75rem, 0.596rem + 0.596vw, 1rem);
 }
 
 .title-text {
-    font-size: 2rem;
+    font-size: clamp(2rem, 1.846rem + 0.596vw, 2.25rem);
     
 }
 
@@ -211,13 +213,13 @@ ul {
 
 .footer-title-text,
 .footer-copyright-text{
-    font-size: 12pt;
+    font-size: clamp(0.75rem, 0.673rem + 0.298vw, 0.875rem);
 }
 
 .blog {
-    font-size: 1rem;
+    font-size: clamp(0.75rem, 0.519rem + 0.894vw, 1.125rem);
 }
 
 .recent-posts-subheader{
-    font-size: minmax(1rem, 1.5rem);
+    font-size: clamp(1rem, 0.692rem + 1.192vw, 1.5rem);
 }

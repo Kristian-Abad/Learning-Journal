@@ -53,7 +53,7 @@
     
     .expand-anchor{
         grid-area: expand;
-        font-size: 14px;
+        font-size: clamp(1rem, 0.923rem + 0.298vw, 1.125rem);
         margin-bottom: 3rem;
     }
 }
@@ -69,7 +69,6 @@
 }
 
 .expand-anchor{
-    
-    font-size: 1rem;
+    font-size: clamp(1rem, 0.923rem + 0.298vw, 1.125rem);
     text-decoration: underline;
 }

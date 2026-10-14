@@ -223,3 +223,7 @@ ul {
 .recent-posts-subheader{
     font-size: clamp(1rem, 0.692rem + 1.192vw, 1.5rem);
 }
+
+.logo-div:hover {
+    cursor: pointer;
+}

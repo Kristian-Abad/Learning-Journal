@@ -14,6 +14,10 @@
 
 }
 
+.hero-div:hover{
+    cursor: pointer;
+}
+
 .expand-anchor {
     text-align: center;
 
